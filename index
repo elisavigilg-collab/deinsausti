@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Carolina de Insausti — Alta costura artesanal para niñas, comunión y bebés. Madrid.">
+<meta name="keywords" content="alta costura niñas, vestidos comunión, alta costura bebés, moda infantil artesanal, Madrid">
+<meta property="og:title" content="Carolina de Insausti · Alta Costura Artesanal">
+<meta property="og:description" content="Alta costura artesanal para niñas, comunión y bebés. Cada prenda, una historia bordada a mano.">
+<meta property="og:url" content="https://deinsausti.es">
+<title>Carolina de Insausti · Alta Costura Artesanal</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Cinzel:wght@300;400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --blush:#f0e6df;--rose:#d4a89a;--rose-deep:#b07060;
+  --ivory:#faf6f0;--champ:#e8ddd0;--sage:#c8c5b5;
+  --gold:#c9a86c;--gold-l:#e8d5a8;
+  --dk:#3a2f2a;--mid:#6b5548;--lt:#9a8578
+}
+html{scroll-behavior:smooth}
+body{font-family:'Cormorant Garamond',Georgia,serif;background:var(--ivory);color:var(--dk);overflow-x:hidden}
+
+nav{position:sticky;top:0;z-index:200;display:flex;justify-content:space-between;align-items:center;padding:16px 48px;background:rgba(250,246,240,.96);backdrop-filter:blur(14px);border-bottom:.5px solid rgba(180,150,130,.18)}
+.nb{font-family:'Cinzel',serif;font-size:11px;letter-spacing:3px;color:var(--dk);font-weight:300}
+.nl{display:flex;gap:28px}
+.nl a{font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;color:var(--mid);text-transform:uppercase;text-decoration:none;transition:color .2s}
+.nl a:hover{color:var(--rose-deep)}
+.nav-menu{display:none;font-size:20px;cursor:pointer;color:var(--dk);background:none;border:none}
+
+.hero{min-height:100vh;background:linear-gradient(160deg,#faf3ee,#f0e4d8 50%,#ebe0d2);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:110px 40px 80px;text-align:center;position:relative;overflow:hidden}
+.halo{position:absolute;border-radius:50%;background:radial-gradient(circle,#d4a89a,transparent 70%);pointer-events:none}
+.badge{font-family:'Cinzel',serif;font-size:9px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin-bottom:18px}
+.htitle{font-family:'Cinzel',serif;font-size:clamp(42px,8vw,90px);font-weight:300;letter-spacing:5px;line-height:1.02;margin-bottom:6px}
+.hsub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(18px,3vw,32px);color:var(--rose-deep);letter-spacing:2px;margin-bottom:24px}
+.orn{display:flex;align-items:center;gap:10px;justify-content:center;margin:0 0 24px}
+.orn::before,.orn::after{content:'';width:90px;height:.5px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.dm{width:5px;height:5px;background:var(--gold);transform:rotate(45deg);flex-shrink:0}
+.htxt{font-size:clamp(14px,1.8vw,18px);font-style:italic;color:var(--mid);line-height:2;max-width:450px;margin:0 auto 44px}
+.ctarow{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+.btndk{font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--ivory);background:var(--dk);border:none;padding:15px 34px;cursor:pointer;transition:background .3s}
+.btndk:hover{background:var(--rose-deep)}
+.btnot{font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--dk);background:transparent;border:.5px solid var(--dk);padding:15px 34px;cursor:pointer;transition:background .3s}
+.btnot:hover{background:var(--blush)}
+
+.strip{background:var(--dk);padding:15px 40px;display:flex;justify-content:center;align-items:center;gap:36px;flex-wrap:wrap}
+.si{font-family:'Cinzel',serif;font-size:8px;letter-spacing:3px;color:var(--gold-l);text-transform:uppercase;opacity:.85}
+.sd{width:3px;height:3px;background:var(--gold);border-radius:50%;opacity:.4}
+
+.sec{padding:88px 40px}
+.sl{font-family:'Cinzel',serif;font-size:9px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;text-align:center;margin-bottom:13px}
+.st{font-family:'Cinzel',serif;font-size:clamp(22px,4vw,42px);font-weight:300;letter-spacing:3px;text-align:center;margin-bottom:13px;line-height:1.25}
+.sp{font-size:clamp(14px,1.8vw,17px);font-style:italic;color:var(--mid);line-height:2;text-align:center;max-width:520px;margin:0 auto 52px}
+
+.hero-img-wrap{position:relative;overflow:hidden}
+.hero-img{width:100%;height:88vh;object-fit:cover;object-position:center 20%;display:block}
+.hero-caption{position:absolute;bottom:0;left:0;right:0;padding:60px 52px 36px;background:linear-gradient(transparent,rgba(30,20,15,.58))}
+.hero-caption h2{font-family:'Cinzel',serif;font-size:clamp(24px,4vw,52px);font-weight:300;letter-spacing:4px;color:#faf6f0;margin-bottom:6px}
+.hero-caption p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(14px,2vw,20px);color:rgba(250,246,240,.8)}
+
+.masonry{columns:3;column-gap:4px;max-width:1200px;margin:0 auto}
+.mi{break-inside:avoid;margin-bottom:4px;overflow:hidden;cursor:pointer;position:relative}
+.mi img{width:100%;display:block;transition:transform .55s ease}
+.mi:hover img{transform:scale(1.05)}
+.mcap{position:absolute;bottom:0;left:0;right:0;padding:20px 16px 13px;background:linear-gradient(transparent,rgba(30,20,15,.65));opacity:0;transition:opacity .3s;display:flex;flex-direction:column;gap:3px}
+.mi:hover .mcap{opacity:1}
+.mcat{font-family:'Cinzel',serif;font-size:7px;letter-spacing:2px;color:var(--gold-l);text-transform:uppercase}
+.mname{font-family:'Cormorant Garamond',serif;font-size:14px;font-style:italic;color:#faf6f0}
+
+.ed-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;max-width:1100px;margin:0 auto}
+.ec{position:relative;overflow:hidden;cursor:pointer}
+.ec img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;transition:transform .6s}
+.ec:hover img{transform:scale(1.05)}
+.eov{position:absolute;inset:0;background:linear-gradient(180deg,transparent 42%,rgba(30,20,15,.72) 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:26px 22px;opacity:0;transition:opacity .3s}
+.ec:hover .eov{opacity:1}
+.etag{font-family:'Cinzel',serif;font-size:8px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:5px}
+.ename{font-family:'Cinzel',serif;font-size:18px;font-weight:300;letter-spacing:2px;color:#faf6f0;margin-bottom:5px}
+.edesc{font-size:13px;font-style:italic;color:rgba(250,246,240,.82);line-height:1.7}
+
+.split{display:grid;grid-template-columns:1fr 1fr;max-width:1100px;margin:0 auto}
+.split-img{overflow:hidden}
+.split-img img{width:100%;height:100%;min-height:500px;object-fit:cover;display:block;transition:transform .55s}
+.split-img:hover img{transform:scale(1.04)}
+.split-txt{background:var(--dk);display:flex;flex-direction:column;justify-content:center;padding:64px 56px}
+.split-txt .sl{text-align:left;margin-bottom:12px}
+.split-txt h2{font-family:'Cinzel',serif;font-size:clamp(20px,2.8vw,34px);font-weight:300;letter-spacing:2px;color:var(--ivory);line-height:1.4;margin-bottom:22px}
+.split-txt p{font-size:16px;font-style:italic;color:var(--sage);line-height:2;margin-bottom:12px}
+
+.baby-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;max-width:1100px;margin:0 auto}
+.bc{overflow:hidden;position:relative;cursor:pointer}
+.bc img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;transition:transform .55s}
+.bc:hover img{transform:scale(1.06)}
+.bc-cap{position:absolute;bottom:0;left:0;right:0;padding:16px 14px 10px;background:linear-gradient(transparent,rgba(30,20,15,.6));opacity:0;transition:opacity .3s}
+.bc:hover .bc-cap{opacity:1}
+.bc-name{font-family:'Cormorant Garamond',serif;font-size:13px;font-style:italic;color:#faf6f0}
+
+.pil-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;max-width:900px;margin:0 auto;text-align:center}
+.pnum{font-family:'Cinzel',serif;font-size:30px;font-weight:300;color:var(--gold);opacity:.42;margin-bottom:8px}
+.pname{font-family:'Cinzel',serif;font-size:11px;letter-spacing:2px;color:var(--dk);margin-bottom:9px}
+.pdesc{font-size:14px;font-style:italic;color:var(--lt);line-height:1.9}
+
+.fairs{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;max-width:680px;margin:0 auto 44px}
+.fair{font-family:'Cinzel',serif;font-size:8px;letter-spacing:2px;color:var(--gold-l);border:.5px solid rgba(201,168,108,.3);padding:10px 20px;text-transform:uppercase}
+
+.ctform{max-width:480px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+.ctform input,.ctform textarea,.ctform select{font-family:'Cormorant Garamond',serif;font-size:15px;font-style:italic;background:#fff;border:.5px solid var(--rose);color:var(--dk);padding:13px 17px;width:100%;outline:none}
+.ctform textarea{resize:vertical;min-height:88px}
+.ctform input::placeholder,.ctform textarea::placeholder{color:var(--lt)}
+
+footer{background:var(--dk);padding:44px 40px;display:flex;flex-direction:column;align-items:center;gap:18px}
+.fb{font-family:'Cinzel',serif;font-size:13px;letter-spacing:4px;color:var(--ivory);font-weight:300}
+.fl{display:flex;gap:26px;flex-wrap:wrap;justify-content:center}
+.fl span{font-family:'Cinzel',serif;font-size:8px;letter-spacing:2px;color:var(--sage);text-transform:uppercase;cursor:pointer}
+.fc{font-size:11px;font-style:italic;color:var(--lt);opacity:.5}
+
+.lb{display:none;position:fixed;inset:0;background:rgba(18,10,7,.96);z-index:999;align-items:center;justify-content:center;flex-direction:column}
+.lb.on{display:flex}
+.lb img{max-width:88vw;max-height:84vh;object-fit:contain}
+.lbx{position:absolute;top:22px;right:30px;font-size:22px;color:var(--gold);cursor:pointer;opacity:.75;font-family:'Cinzel',serif;line-height:1}
+.lbx:hover{opacity:1}
+.lbp,.lbn{position:absolute;top:50%;transform:translateY(-50%);font-size:36px;color:var(--gold);cursor:pointer;opacity:.5;padding:20px;user-select:none}
+.lbp:hover,.lbn:hover{opacity:1}
+.lbp{left:8px}.lbn{right:8px}
+.lbcap{margin-top:14px;font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;color:var(--gold-l);text-transform:uppercase;opacity:.7}
+
+@media(max-width:900px){
+  .masonry{columns:2}
+  .ed-grid{grid-template-columns:1fr 1fr}
+  .pil-grid{grid-template-columns:1fr 1fr;gap:28px}
+  .baby-grid{grid-template-columns:1fr 1fr}
+  .split{grid-template-columns:1fr}
+}
+@media(max-width:580px){
+  .masonry{columns:1}
+  .ed-grid{grid-template-columns:1fr}
+  nav{padding:14px 20px}
+  .nl{gap:14px}
+  .hero{padding:90px 24px 60px}
+  .sec{padding:60px 24px}
+  .split-txt{padding:44px 28px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="nb">Carolina de Insausti</span>
+  <div class="nl">
+    <a href="#galeria">Galería</a>
+    <a href="#colecciones">Colecciones</a>
+    <a href="#atelier">El Atelier</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="halo" style="width:700px;height:700px;top:-200px;right:-200px;opacity:.09"></div>
+  <div class="halo" style="width:500px;height:500px;bottom:-150px;left:-150px;opacity:.06"></div>
+  <div class="badge">Haute Couture · Alta Costura Artesanal · Madrid</div>
+  <h1 class="htitle">Carolina<br>de Insausti</h1>
+  <p class="hsub">La magia de la aguja</p>
+  <div class="orn"><span class="dm"></span></div>
+  <p class="htxt">Alta costura artesanal para niñas, comunión y bebés.<br>Cada prenda, una historia bordada a mano.</p>
+  <div class="ctarow">
+    <button class="btndk" onclick="document.getElementById('galeria').scrollIntoView({behavior:'smooth'})">Descubrir la colección</button>
+    <button class="btnot" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Contacto para compradores</button>
+  </div>
+</section>
+
+<!-- IMAGEN HERO PRINCIPAL — kiosco nevado -->
+<div class="hero-img-wrap">
+  <img class="hero-img"
+    src="https://i.ibb.co/XfsXCzXn/IMG-9723.jpg"
+    alt="Carolina de Insausti · Alta Costura · Kiosco nevado">
+  <div class="hero-caption">
+    <h2>Un cuento hecho vestido</h2>
+    <p>Alta costura infantil artesanal · Colección Invierno</p>
+  </div>
+</div>
+
+<!-- STRIP -->
+<div class="strip">
+  <span class="si">Alta costura</span><span class="sd"></span>
+  <span class="si">Hecho a mano</span><span class="sd"></span>
+  <span class="si">Tejidos nobles</span><span class="sd"></span>
+  <span class="si">Piezas únicas</span><span class="sd"></span>
+  <span class="si">Pedido exclusivo</span>
+</div>
+
+<!-- GALERÍA MASONRY -->
+<section class="sec" style="background:var(--blush)" id="galeria">
+  <div class="sl">Lookbook</div>
+  <h2 class="st">El mundo de Carolina</h2>
+  <p class="sp">Cada imagen es una prenda real. Artesanía, tejidos nobles y magia pura, bordada a mano en Madrid.</p>
+  <div class="masonry">
+    <div class="mi" onclick="openLb(0)">
+      <img src="https://i.ibb.co/N2n0x3XJ/IMG-9732.jpg" alt="Arpa de hielo" loading="lazy">
+      <div class="mcap"><span class="mcat">Niñas · Alta Costura</span><span class="mname">Arpa de hielo</span></div>
+    </div>
+    <div class="mi" onclick="openLb(1)">
+      <img src="https://i.ibb.co/C5F7sV4c/IMG-9716.jpg" alt="La reina del kiosco" loading="lazy">
+      <div class="mcap"><span class="mcat">Niñas · Alta Costura</span><span class="mname">La reina del kiosco</span></div>
+    </div>
+    <div class="mi" onclick="openLb(2)">
+      <img src="https://i.ibb.co/PsWGBQn8/IMG-9731.jpg" alt="Nieve azul" loading="lazy">
+      <div class="mcap"><span class="mcat">Niñas · Alta Costura</span><span class="mname">Nieve azul</span></div>
+    </div>
+    <div class="mi" onclick="openLb(3)">
+      <img src="https://i.ibb.co/zT3x2ffP/IMG-9729.jpg" alt="Sueño lila" loading="lazy">
+      <div class="mcap"><span class="mcat">Niñas · Alta Costura</span><span class="mname">Sueño lila</span></div>
+    </div>
+    <div class="mi" onclick="openLb(4)">
+      <img src="https://i.ibb.co/4qpvWVX/IMG-9730.jpg" alt="Jardín de almendros" loading="lazy">
+      <div class="mcap"><span class="mcat">Niñas · Alta Costura</span><span class="mname">Jardín de almendros</span></div>
+    </div>
+    <div class="mi" onclick="openLb(5)">
+      <img src="https://i.ibb.co/gbmXtzs1/IMG-9725.jpg" alt="La bibliotecaria" loading="lazy">
+      <div class="mcap"><span class="mcat">Niñas · Alta Costura</span><span class="mname">La bibliotecaria</span></div>
+    </div>
+    <div class="mi" onclick="openLb(6)">
+      <img src="https://i.ibb.co/6J17yhcs/IMG-9727.jpg" alt="Magia de estrellas" loading="lazy">
+      <div class="mcap"><span class="mcat">Niñas · Alta Costura</span><span class="mname">Magia de estrellas</span></div>
+    </div>
+    <div class="mi" onclick="openLb(7)">
+      <img src="https://i.ibb.co/ZzBNHqGt/IMG-9726.jpg" alt="Encaje dorado" loading="lazy">
+      <div class="mcap"><span class="mcat">Niñas · Alta Costura</span><span class="mname">Encaje dorado</span></div>
+    </div>
+    <div class="mi" onclick="openLb(8)">
+      <img src="https://i.ibb.co/7xVCc1fx/IMG-9714.jpg" alt="Terciopelo rojo" loading="lazy">
+      <div class="mcap"><span class="mcat">Niñas · Alta Costura</span><span class="mname">Terciopelo rojo</span></div>
+    </div>
+    <div class="mi" onclick="openLb(9)">
+      <img src="https://i.ibb.co/zTGh0YHL/IMG-9710.jpg" alt="Rosa de invierno" loading="lazy">
+      <div class="mcap"><span class="mcat">Niñas · Alta Costura</span><span class="mname">Rosa de invierno</span></div>
+    </div>
+    <div class="mi" onclick="openLb(10)">
+      <img src="https://i.ibb.co/632CdwV/IMG-9713.jpg" alt="Comunión encaje" loading="lazy">
+      <div class="mcap"><span class="mcat">Comunión</span><span class="mname">Encaje y perlas</span></div>
+    </div>
+    <div class="mi" onclick="openLb(11)">
+      <img src="https://i.ibb.co/0RJ7Szss/IMG-9728.jpg" alt="Tul champagne" loading="lazy">
+      <div class="mcap"><span class="mcat">Madre & Hija</span><span class="mname">Tul champagne</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- COLECCIONES -->
+<section class="sec" style="background:var(--ivory)" id="colecciones">
+  <div class="sl">Colecciones</div>
+  <h2 class="st">Tres universos,<br>una sola magia</h2>
+  <p class="sp">Desde los primeros días de vida hasta el momento más especial. Alta costura para cada etapa.</p>
+  <div class="ed-grid">
+    <div class="ec">
+      <img src="https://i.ibb.co/YwWcCz8/IMG-9722.jpg" alt="Niñas alta costura" loading="lazy">
+      <div class="eov">
+        <div class="etag">Niñas · Alta Costura</div>
+        <div class="ename">Jardín de Hadas</div>
+        <div class="edesc">Vestidos únicos de tul, organza y encaje bordado a mano en colores de cuento.</div>
+      </div>
+    </div>
+    <div class="ec">
+      <img src="https://i.ibb.co/p6NszdVk/IMG-9724.jpg" alt="Comunión" loading="lazy">
+      <div class="eov">
+        <div class="etag">Primera Comunión</div>
+        <div class="ename">Luz de Alba</div>
+        <div class="edesc">Encaje francés, bordados artesanales y detalles perlados para el día más especial.</div>
+      </div>
+    </div>
+    <div class="ec">
+      <img src="https://i.ibb.co/LDk40qBB/IMG-9578.jpg" alt="Bebés" loading="lazy">
+      <div class="eov">
+        <div class="etag">Bebés & Recién nacidos</div>
+        <div class="ename">Primeros Sueños</div>
+        <div class="edesc">Conjuntos artesanales de tul y encaje desde el primer instante de vida.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ATELIER SPLIT -->
+<div class="split" id="atelier">
+  <div class="split-img">
+    <img src="https://i.ibb.co/b5KgCM3L/IMG-9644.jpg" alt="Madre e hija · Carolina de Insausti">
+  </div>
+  <div class="split-txt">
+    <div class="sl" style="text-align:left">Sobre la marca</div>
+    <h2>Donde la aguja<br>escribe poesía</h2>
+    <p>Carolina de Insausti es una casa de alta costura artesanal especializada en prendas de ceremonia para niñas, vestidos de primera comunión y colecciones para bebés y recién nacidos.</p>
+    <p>Cada pieza nace de un proceso completamente manual: el boceto, la elección del tejido noble, el corte, la construcción y el bordado artesanal. No hay dos prendas iguales.</p>
+    <p>La marca se presenta en ferias internacionales de moda infantil, llevando la tradición artesanal española al mundo.</p>
+  </div>
+</div>
+
+<!-- BEBÉS -->
+<section class="sec" style="background:var(--champ)">
+  <div class="sl">Bebés & Recién nacidos</div>
+  <h2 class="st">Alta costura<br>desde el primer día</h2>
+  <p class="sp">Capotas, conjuntos de tul y encaje artesanal para los momentos más tiernos de la vida.</p>
+  <div class="baby-grid">
+    <div class="bc">
+      <img src="https://i.ibb.co/DgQ9mp6H/IMG-9643.jpg" alt="Bebé azul paniculata" loading="lazy">
+      <div class="bc-cap"><span class="bc-name">Azul y paniculata</span></div>
+    </div>
+    <div class="bc">
+      <img src="https://i.ibb.co/4ZB3vNNP/IMG-9642.jpg" alt="Bebé zorro" loading="lazy">
+      <div class="bc-cap"><span class="bc-name">Bebé zorro</span></div>
+    </div>
+    <div class="bc">
+      <img src="https://i.ibb.co/jZRcfc2K/IMG-9593.png" alt="Recién nacida ivory" loading="lazy">
+      <div class="bc-cap"><span class="bc-name">Recién nacida ivory</span></div>
+    </div>
+    <div class="bc">
+      <img src="https://i.ibb.co/9mHtdF5S/IMG-9592.jpg" alt="Capota rayas" loading="lazy">
+      <div class="bc-cap"><span class="bc-name">Capota artesanal</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FILOSOFÍA -->
+<section class="sec" style="background:var(--blush)">
+  <div class="sl">Filosofía</div>
+  <h2 class="st">El arte de vestir<br>un momento eterno</h2>
+  <div style="height:40px"></div>
+  <div class="pil-grid">
+    <div>
+      <div class="pnum">01</div>
+      <div class="pname">Artesanía pura</div>
+      <div class="pdesc">Cada puntada es intencional. Bordados a mano, piezas únicas cosidas con tiempo y amor.</div>
+    </div>
+    <div>
+      <div class="pnum">02</div>
+      <div class="pname">Tejidos nobles</div>
+      <div class="pdesc">Seda, tul francés, organza y encaje Chantilly. Solo los mejores tejidos del mundo.</div>
+    </div>
+    <div>
+      <div class="pnum">03</div>
+      <div class="pname">Medida exacta</div>
+      <div class="pdesc">Cada vestido se confecciona sobre medidas reales. Ajuste perfecto para cada cuerpo.</div>
+    </div>
+    <div>
+      <div class="pnum">04</div>
+      <div class="pname">Edición limitada</div>
+      <div class="pdesc">No hay producción en serie. Cada vestido es exclusivo, irrepetible, tuyo.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FERIAS -->
+<section class="sec" style="background:var(--dk);text-align:center">
+  <div class="sl">Presencia global</div>
+  <h2 class="st" style="color:var(--ivory)">Una marca<br>para el mundo</h2>
+  <p class="sp" style="color:var(--sage)">Disponible para compradores mayoristas y distribuidores selectos en las principales ferias internacionales de moda infantil.</p>
+  <div class="fairs">
+    <span class="fair">Pitti Bimbo · Florencia</span>
+    <span class="fair">FIMI · Valencia</span>
+    <span class="fair">Salon du Mariage · París</span>
+    <span class="fair">Kind + Jugend · Colonia</span>
+    <span class="fair">Barcelona Bridal Week</span>
+    <span class="fair">White Milano</span>
+  </div>
+  <button class="btnot" style="border-color:rgba(201,168,108,.4);color:#e8d5a8"
+    onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">
+    Solicitar catálogo para compradores
+  </button>
+</section>
+
+<!-- CONTACTO -->
+<section class="sec" style="background:var(--ivory);text-align:center" id="contacto">
+  <div class="sl">Contacto</div>
+  <h2 class="st">Hablemos</h2>
+  <p class="sp">Para compradores internacionales, distribuidores o encargos privados. Respondemos en 48 horas.</p>
+  <div class="ctform">
+    <input type="text" placeholder="Nombre o empresa">
+    <input type="email" placeholder="Correo electrónico">
+    <input type="text" placeholder="País / mercado de interés">
+    <select>
+      <option value="" disabled selected>Motivo del contacto</option>
+      <option>Comprador feria internacional</option>
+      <option>Distribuidor / multimarca</option>
+      <option>Encargo privado · Comunión</option>
+      <option>Encargo privado · Niña</option>
+      <option>Bebé / Recién nacido</option>
+      <option>Prensa y comunicación</option>
+    </select>
+    <textarea placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
+    <button class="btndk" style="align-self:center;margin-top:8px" id="sendbtn"
+      onclick="document.getElementById('sendbtn').textContent='✦ Mensaje enviado';document.getElementById('sendbtn').disabled=true">
+      Enviar mensaje
+    </button>
+  </div>
+</section>
+
+<footer>
+  <div class="fb">Carolina de Insausti</div>
+  <div class="orn"><span class="dm" style="background:#c9a86c"></span></div>
+  <div class="fl">
+    <span onclick="document.getElementById('galeria').scrollIntoView({behavior:'smooth'})">Colecciones</span>
+    <span onclick="document.getElementById('atelier').scrollIntoView({behavior:'smooth'})">El Atelier</span>
+    <span onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Compradores</span>
+    <span>Instagram</span>
+    <span onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Contacto</span>
+  </div>
+  <div class="fc">© 2026 Carolina de Insausti · Alta Costura Artesanal · deinsausti.es</div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb">
+  <span class="lbx" onclick="closeLb()">✕</span>
+  <span class="lbp" onclick="lbNav(-1)">‹</span>
+  <img id="lbImg" src="" alt="">
+  <div class="lbcap" id="lbCap"></div>
+  <span class="lbn" onclick="lbNav(1)">›</span>
+</div>
+
+<script>
+const lbImgs=[
+  'https://i.ibb.co/N2n0x3XJ/IMG-9732.jpg',
+  'https://i.ibb.co/C5F7sV4c/IMG-9716.jpg',
+  'https://i.ibb.co/PsWGBQn8/IMG-9731.jpg',
+  'https://i.ibb.co/zT3x2ffP/IMG-9729.jpg',
+  'https://i.ibb.co/4qpvWVX/IMG-9730.jpg',
+  'https://i.ibb.co/gbmXtzs1/IMG-9725.jpg',
+  'https://i.ibb.co/6J17yhcs/IMG-9727.jpg',
+  'https://i.ibb.co/ZzBNHqGt/IMG-9726.jpg',
+  'https://i.ibb.co/7xVCc1fx/IMG-9714.jpg',
+  'https://i.ibb.co/zTGh0YHL/IMG-9710.jpg',
+  'https://i.ibb.co/632CdwV/IMG-9713.jpg',
+  'https://i.ibb.co/0RJ7Szss/IMG-9728.jpg'
+];
+const lbNames=[
+  'Arpa de hielo','La reina del kiosco','Nieve azul','Sueño lila',
+  'Jardín de almendros','La bibliotecaria','Magia de estrellas','Encaje dorado',
+  'Terciopelo rojo','Rosa de invierno','Encaje y perlas','Tul champagne'
+];
+let lbIdx=0;
+function openLb(i){
+  lbIdx=i;
+  document.getElementById('lbImg').src=lbImgs[i];
+  document.getElementById('lbCap').textContent=lbNames[i];
+  document.getElementById('lb').classList.add('on');
+}
+function closeLb(){document.getElementById('lb').classList.remove('on')}
+function lbNav(d){openLb((lbIdx+d+lbImgs.length)%lbImgs.length)}
+document.getElementById('lb').addEventListener('click',e=>{if(e.target===e.currentTarget)closeLb()});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape')closeLb();
+  if(e.key==='ArrowLeft')lbNav(-1);
+  if(e.key==='ArrowRight')lbNav(1);
+});
+</script>
+</body>
+</html>
